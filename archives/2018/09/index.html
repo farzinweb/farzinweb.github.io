@@ -65,7 +65,7 @@
       
         <li class="list-item">
           
-            <a href="/" class="item-link active">Home</a>
+            <a href="/" class="item-link">Home</a>
           
         </li>
       
@@ -104,7 +104,7 @@
         
           <li class="menu-item">
             
-              <a href="/" class="menu-link mobile-active">Home</a>
+              <a href="/" class="menu-link">Home</a>
             
           </li>
         
@@ -137,97 +137,53 @@
   </div>
 </header>
 
-    <main class="app-body">
+    <div id="article-banner">
+  <h2>Archives</h2>
+  <p class="post-date">文章归档</p>
+</div>
+<main class="app-body" id="archives">
   
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/09/18/完全平方数/">完全平方数</a>
-      </h2>
-      <p class="article-date">September 18, 2018</p>
-      
-        
-  <a href="/tags#Lintcode">
-    <span class="tag-code">Lintcode</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          Problem
-给出一个正整数 num,写一个函数，要求当这个当num为完全平方数时函数返回True，否则返回False
-
-Analysis问题求解最简单的是用sqrt函数，返回的结果为整数即为完全平方数.但是这就没有难度了.我们可以找完全平方数的规律来验证num是否是完全平凡数。常见的规律 ...
-        
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2018
+  </h1>
+  <div class="section-list">
+    
+    
+      <div class="section-list-item">
+        <a href="/2018/09/18/完全平方数/" class="archive-title">完全平方数</a>
+        <p class="archive-date">09-18</p>
       </div>
-      <a class="more" href="/2018/09/18/完全平方数/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/09/17/Number-of-1-Bits/">Number of 1 Bits</a>
-      </h2>
-      <p class="article-date">September 17, 2018</p>
-      
-        
-  <a href="/tags#Lintcode">
-    <span class="tag-code">Lintcode</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          Problem
-Write a function that takes an unsigned integer and returns the number of ’1’ bits it has (also known as the Hamming weight).
-For example, ...
-        
+    
+      <div class="section-list-item">
+        <a href="/2018/09/17/Number-of-1-Bits/" class="archive-title">Number of 1 Bits</a>
+        <p class="archive-date">09-17</p>
       </div>
-      <a class="more" href="/2018/09/17/Number-of-1-Bits/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/09/17/珠宝和石头/">珠宝和石头</a>
-      </h2>
-      <p class="article-date">September 17, 2018</p>
-      
-        
-  <a href="/tags#Lintcode">
-    <span class="tag-code">Lintcode</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          Problem
-给定字符串J代表是珠宝的石头类型，而S代表你拥有的石头.S中的每个字符都是你拥有的一个石头. 你想知道你的石头有多少是珠宝.J中的字母一定不同，J和S中的字符都是字母。 字母区分大小写，因此a和A是不同的类型.
-s和J由字母组成且长度最长为50.且J中字符各不相同.
-
-Ana ...
-        
+    
+      <div class="section-list-item">
+        <a href="/2018/09/17/珠宝和石头/" class="archive-title">珠宝和石头</a>
+        <p class="archive-date">09-17</p>
       </div>
-      <a class="more" href="/2018/09/17/珠宝和石头/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/09/15/Hello-World-0/">Hello World</a>
-      </h2>
-      <p class="article-date">September 15, 2018</p>
-      
-      <div class="article-summary">
-        
-          My first blog.
-
-        
+    
+      <div class="section-list-item">
+        <a href="/2018/09/15/Hello-World-0/" class="archive-title">Hello World</a>
+        <p class="archive-date">09-15</p>
       </div>
-      <a class="more" href="/2018/09/15/Hello-World-0/">Read more</a>
-    </article>
-  
-
+    
+  </div>
+</section>
   
 </main>
 
-
+<script>
+  (function () {
+    var url = 'http://yoursite.com/archives/2018/09/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
+  })();
+</script>
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
